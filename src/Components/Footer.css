@@ -1,0 +1,111 @@
+.footer {
+  background-color: #e6ecf5;
+}
+.footer_text {
+  padding: 40px 20px;
+  font-size: 12px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  max-width: 40%;
+  float: none;
+  margin: 0 auto;
+  text-align: center;
+}
+.social-icons li {
+  list-style: none;
+  margin: 40px 4px 35px;
+  display: flex;
+  padding: 8px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.social-icons li i {
+  font-size: 20px;
+}
+.social-icons span {
+  /* font-family: Poppins; */
+  font-weight: 600;
+  font-style: normal;
+  color: #002044;
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin: 6px 10px;
+}
+.facebook-icon:hover {
+  color: white;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #3b5998, #8b9dc3);
+}
+.twitter-icon:hover {
+  color: white;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #1da1f2, #aab8c2);
+}
+.youtube-icon:hover {
+  color: white;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #ff0000, #ff5b00);
+}
+.instagram-icon:hover {
+  background: linear-gradient(45deg, #833ab4, #fd1d1d, #fdcb58);
+  color: white;
+  border-radius: 50px;
+}
+.facebook-icon,
+.twitter-icon,
+.youtube-icon,
+.instagram-icon {
+  transition: background 0.3s ease-in, color 0.3s ease-in; /* Add transition */
+}
+.newsletter-input {
+  max-width: 386px;
+  margin: auto;
+  border-radius: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 35px;
+}
+.input-group-text {
+  background-color: #ff4f69;
+  color: white;
+  border-radius: 0px;
+}
+.newsletter-input .form-control,
+.newsletter-input .input-group-text {
+  border-radius: 0px; /* Set border radius to 0 */
+}
+small {
+  font-weight: 600;
+}
+.social-icons{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media(max-width:768px){
+    .social-icons{
+        max-width: 300px;
+    }
+    .social-icons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 0  auto;
+        padding: 0;
+    }
+    .social-icons li{
+        margin: 20px 4px;
+    }
+    .newsletter-input{
+        max-width: 335px;
+    }
+    .footer_text{
+        max-width: 335px;
+    }
+
+}
